@@ -9,7 +9,7 @@ $sql = "SELECT * FROM orders";
 $total = mysql_num_rows(mysql_query($sql)); //记录总条数
 if (!empty($_GET['page']) && $total != 0 && $curpage > ceil($total / $showrow))
     $curpage = ceil($total_rows / $showrow); //当前页数大于最后页数，取最后一页
-//获取数据
+
 $sql .= " LIMIT " . ($curpage - 1) * $showrow . ",$showrow;";
 $query = mysql_query($sql);
 ?>
