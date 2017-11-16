@@ -1,7 +1,7 @@
 <?php
 include_once("config.php");
 require_once('page.class.php'); //分页类
-$showrow = 10; //一页显示的行数
+$showrow = 10; //
 $curpage = empty($_GET['page']) ? 1 : $_GET['page']; //当前的页,还应该处理非数字的情况
 $url = "?page={page}"; //分页地址，如果有检索条件 ="?page={page}&q=".$_GET['q']
 
