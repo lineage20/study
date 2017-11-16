@@ -110,7 +110,7 @@ $query = mysql_query($sql);
                             </li>
                         <?php } ?>
                     </ul>
-                    <!--显示数据区-->
+                   
                 </div>
                 <div class="showPage">
                     <?php
